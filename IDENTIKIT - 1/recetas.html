@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas de Bebidas</title>
+  <link rel="icon" href="ICONOS/ICONO.ico" type="image/x-icon">
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .navbar a:hover {
+      background-color: #eaeaea;
+    }
+    table {
+      width: 60%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+      font-size: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #333;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+    td img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    td .drink-name {
+      font-weight: 500;
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="presentacion.html">Sobre Mí</a>
+        <a href="recetas.html">Recetas Bebidas</a>
+        <a href="reccetasinspo.html">Recetas Inspo</a>
+        <a href="index.html">Juego</a>
+      </nav>
+
+  <h3 style="text-align: center;">✨ Recetas de Bebidas Frías Estilo Starbucks ✨</h3>
+
+  <table>
+    <tr>
+      <th>Bebida</th>
+      <th>Imagen</th>
+      <th>Receta</th>
+    </tr>
+    <tr>
+      <td class="drink-name">Frappuccino de Vainilla</td>
+      <td><img src="IMAGENES/Cappuchino.jpg" alt="Frappuccino de Vainilla"></td>
+      <td>1 taza de hielo, 1/2 taza de leche, 1/4 taza de sirope de vainilla, 1/2 taza de café helado. Mezclar todo en licuadora.</td>
+    </tr>
+    <tr>
+      <td class="drink-name">Té Frío de Fresas</td>
+      <td><img src="IMAGENES/te frio de fresas.jpg" alt="Té frío de fresas"></td>
+      <td>1 taza de fresas, 1/2 taza de agua, 1 cucharadita de azúcar, 1 taza de té verde. Licuar y enfriar.</td>
+    </tr>
+    <tr>
+      <td class="drink-name">Strawberry Matcha</td>
+      <td><img src="IMAGENES/strawberry matcha.jpg" alt="Strawberry Matcha"></td>
+      <td>Fresas, matcha, leche, azúcar (opcional), hielo. Mezcla todo y licúa. Sirve frío.</td>
+    </tr>
+    <tr>
+      <td class="drink-name">Purple Spring</td>
+      <td><img src="IMAGENES/Purple Spring.jpg" alt="Purple Spring"></td>
+      <td>Lavanda, jugo de uva, limón, miel y agua. Mezcla y sirve con hielo.</td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <p>&copy; 2025 Sofía Celeste Ojeda - Todos los derechos reservados</p>
+  </div>
+
+</body>
+</html>
