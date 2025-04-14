@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Cuánto sabés de Starbucks?</title>
+  <link rel="icon" href="ICONOS/ICONO.ico" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8e6e0;
+      color: #4b2e2e;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #f0e6e0;
+      color: #a0522d;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #a0522d;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.4em;
+      margin: 30px 0;
+    }
+
+    .btn-jugar {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #dcbca3;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-jugar:hover {
+      background-color: #b68f79;
+    }
+
+    .cafe-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+
+    .cafe-icon img {
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Sobre Mí</a>
+    <a href="recetas.html">Recetas Bebidas</a>
+    <a href="reccetasinspo.html">Recetas Inspo</a>
+    <a href="juego.html">Juego</a>
+  </nav>
+
+  <div class="main-content">
+    <div class="cafe-icon">
+      <img src="IMAGENES/LOGO.png" alt="Strawberry Refresher">
+    </div>
+
+    <h1>¿Cuánto sabés de Starbucks?</h1>
+    <p>Descubrí si sos fan de verdad...<br>¡Adiviná el nombre de cada bebida!</p>
+
+    <a href="adivina1.html" class="btn-jugar">Comenzar</a>
+  </div>
+
+</body>
+</html>
+

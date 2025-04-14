@@ -2,25 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>¿Cuánto sabés de Starbucks?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOBRE MÍ</title>
   <link rel="icon" href="ICONOS/ICONO.ico" type="image/x-icon">
   <style>
-    * {
+    body {
+      background-color: #fafafa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      color: #333;
     }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8e6e0;
-      color: #4b2e2e;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    /* NAVBAR */
     .navbar {
       background-color: #fff;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
@@ -32,7 +24,6 @@
       top: 0;
       z-index: 1000;
     }
-
     .navbar a {
       text-decoration: none;
       color: #333;
@@ -42,75 +33,73 @@
       border-radius: 10px;
       transition: all 0.3s ease;
     }
-
     .navbar a:hover {
-      background-color: #f0e6e0;
-      color: #a0522d;
+      background-color: #eaeaea;
     }
-
-    .main-content {
-      flex-grow: 1;
+    .nombre-estetico {
+      margin: 30px auto 10px auto;
+      width: fit-content;
+      padding: 14px 28px;
+      font-size: 18px;
+      color: #333;
+      background-color: #ffffff;
+      border: 2px solid #e3e3e3;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
       text-align: center;
-      padding: 60px 20px;
+      font-weight: 600;
     }
-
+  
     h1 {
-      font-size: 3em;
-      color: #a0522d;
-      margin-bottom: 20px;
+      color: #444;
+      font-size: 26px;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: 600;
     }
-
     p {
-      font-size: 1.4em;
-      margin: 30px 0;
+      color: #666;
+      font-size: 16px;
+      text-align: center;
+      margin: 20px 0;
+      line-height: 1.6;
     }
-
-    .btn-jugar {
-      display: inline-block;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      background-color: #dcbca3;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
+    h3 {
+      text-align: center;
+      color: #444;
+      font-size: 22px;
+      margin-top: 30px;
     }
-
-    .btn-jugar:hover {
-      background-color: #b68f79;
-    }
-
-    .cafe-icon {
-      font-size: 80px;
-      margin-bottom: 20px;
-    }
-
-    .cafe-icon img {
-      width: 250px;
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
   <nav class="navbar">
-    <a href="presentacion.html">Sobre Mí</a>
+    <a href="index.html">Sobre Mí</a>
     <a href="recetas.html">Recetas Bebidas</a>
     <a href="reccetasinspo.html">Recetas Inspo</a>
-    <a href="index.html">Juego</a>
+    <a href="juego.html">Juego</a>
   </nav>
 
-  <div class="main-content">
-    <div class="cafe-icon">
-      <img src="IMAGENES/LOGO.png" alt="Strawberry Refresher">
+  <div class="container">
+    <h1>Sofía Celeste Ojeda | Estudiante de Sistemas</h1>
+  
+    <center>
+      <img src="IMAGENES/SOFIA.png" alt="La imagen no es visible debido a un error de carga." width="250">
+    </center>
+    
+    <p>¡Hola, soy Sofi!
+      Este es mi kit de identificación. Aquí encontrarás recetas de bebidas frías al estilo Starbucks, perfectas para preparar en casa. Desde frappuccinos hasta té frío, comparto mis recetas favoritas para que las disfrutes. ¡Espero que te gusten y te diviertas preparándolas! 😊</p>
+    <div class="footer">
+      <p>&copy; 2025 Sofía Celeste Ojeda - Todos los derechos reservados</p>
     </div>
-
-    <h1>¿Cuánto sabés de Starbucks?</h1>
-    <p>Descubrí si sos fan de verdad...<br>¡Adiviná el nombre de cada bebida!</p>
-
-    <a href="adivina1.html" class="btn-jugar">Comenzar</a>
   </div>
-
 </body>
 </html>
 
