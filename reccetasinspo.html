@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recetas Inspo</title>
+  <link rel="icon" href="ICONOS/ICONO.ico" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f4f1;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #eaeaea;
+    }
+
+    .main-container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #efeae6;
+      padding: 30px 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar h2 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #5c5c5c;
+    }
+
+    .sidebar button {
+      background-color: #dcd4cb;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+      transition: 0.2s ease;
+      color: #444;
+    }
+
+    .sidebar button:hover {
+      background-color: #cbbfb6;
+    }
+
+    .content {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .video-box {
+      width: 480px;
+      height: 480px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 10px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .video-box.active {
+      display: flex;
+    }
+
+    .video-title {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .video-box video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="presentacion.html">Sobre Mí</a>
+    <a href="recetas.html">Recetas Bebidas</a>
+    <a href="reccetasinspo.html">Recetas Inspo</a>
+    <a href="index.html">Juego</a>
+  </nav>
+
+  <div class="main-container">
+    <div class="sidebar">
+      <h2>RECETAS INSPO</h2>
+      <button onclick="mostrarVideo('strawberry')">Strawberry Yakult 🍓🥛</button>
+      <button onclick="mostrarVideo('oreoMilk')">Oreo Milk 🍪🥛</button>
+      <button onclick="mostrarVideo('blueberry')">Blueberry Cheese 🫐🍰</button>
+      <button onclick="mostrarVideo('oreoMousse')">Oreo Mousse Cake 🍫🍰</button>
+    </div>
+
+    <div class="content">
+      <div class="video-box active" id="strawberry">
+        <div class="video-title">Strawberry Yakult</div>
+        <video controls>
+          <source src="VIDEO/STRAWBERRY YAKULT.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-box" id="oreoMilk">
+        <div class="video-title">Oreo Milk</div>
+        <video controls>
+          <source src="VIDEO/OREO MILK.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-box" id="blueberry">
+        <div class="video-title">Blueberry Cheese</div>
+        <video controls>
+          <source src="VIDEO/BLUEBERRY CHEESE.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-box" id="oreoMousse">
+        <div class="video-title">Oreo Mousse Cake</div>
+        <video controls>
+          <source src="VIDEO/OREO MOUSSE CAKE.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarVideo(id) {
+      const videos = document.querySelectorAll('.video-box');
+      videos.forEach(video => video.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
